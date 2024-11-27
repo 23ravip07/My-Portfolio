@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0685d3c057.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" alt="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hii, I'm <span>Ravi</span> <br>Prakash from India</h1>
+        </div>
+    </div>
+</div>
+<!-- -------------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-co-1">
+                <img src="images/User.jpg" >
+            </div>
+            <div class="about-co-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hyyy, my name is Ravi Prakash Mishra and,
+                    i am here developing website about my Portfolio.
+                    I studied Maths, Physics ans Chemistry majorly in 12th.
+                    Hopefully, this begining will be very effective and innovative,
+                    throughout my journey. I did graduate recently and looking for 
+                    an opportunity which will be very helpful for the 
+                    growth of the career and it would be better for my family and evryone 
+                    who works with me throughout my journey. I would be very grateful.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Web Dev training at Udyam</li>
+                        <li><span>2022 - 2023</span><br>Flutter Developer</li>
+                        <li><span>2020 - 2022</span><br>Application Developer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>I2IT, Hinjawadi Phase 1, Pune</li>
+                        <li><span>2020</span><br>12th PCS, Samastipur, Bihar</li>
+                        <li><span>2018</span><br>10th PCS, Samastipur, Bihar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------services---------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>We designed website at very reasonable cost,
+                    feel free to contact any time.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Development</h2>
+                <p>We developed app and launch them in the market in a very effecive way,
+                    we provide the best services and develop the application within less period of time.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-apple"></i>
+                <h2>Software Development</h2>
+                <p>Services can be provided dynamically, including working on the machine learning and 
+                    artificial intelligent.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------portfolio---------- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg">
+                <div class="layer">
+                    <h3>Share Market</h3>
+                    <p>A stock market, equity market, 
+                        or share market is the aggregation of buyers and sellers of stocks (also called shares), 
+                        which represent ownership claims on businesses
+                    </p>
+                    <a href="#"><i class="fa-sharp fa-solid
+                         fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h3>IPO Knowledge</h3>
+                    <p>An investment in an IPO has the potential to deliver attractive returns. 
+                        However, prior to investing, 
+                        it is important to understand how the process of trading these securities differs from ordinary stock trading 
+                    </p>
+                    <a href="#"><i class="fa-sharp fa-solid
+                         fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.jpg">
+                <div class="layer">
+                    <h3>Bitcoin investment</h3>
+                    <p>Bitcoin is the public blockchain used to create
+                         and manage the cryptocurrency of the same name.
+                    </p>
+                    <a href="#"><i class="fa-sharp fa-solid
+                         fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+ <!-- -------------contact---------- -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>9876543210</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin-in.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="images/my_cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-sharp fa-solid fa-copyright"></i>Copyright @ Ravi.Personal Portfolio</p>
+        </div>
+    </div>
+  </div>
+
+<!-- <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+    }
+    
+</script> -->
+<script src="script.js"></script>
+    
+</body>
+</html>
